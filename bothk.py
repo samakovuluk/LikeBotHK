@@ -5,7 +5,7 @@ import pickle
 import random
 
 url = 'https://hk.carousell.com'
-driver = webdriver.Chrome('D:\\honk\\chromedriver.exe')
+driver = webdriver.Chrome('chromedriver.exe')
 driver.get(url)
 time.sleep(1)
 cookies = pickle.load(open("cookies.pkl", "rb"))

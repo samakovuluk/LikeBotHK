@@ -68,7 +68,7 @@ def expandAll(u,k,w):
 #here we finding empty like fields by svg.
 def getEmptyFields():
     print("action find empty fields")
-    return driver.find_elements_by_xpath("//img[@src = 'https://mweb-cdn.karousell.com/build/like-outlined-110d8c524ae4580258130ea6f75ef84c.svg']")
+    return driver.find_elements_by_xpath("//*[local-name() = 'svg'][@height='24'][@viewBox='0 0 24 24']")
 
 #This for like all empty fields
 def worker(u,w):
